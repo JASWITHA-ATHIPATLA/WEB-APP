@@ -1,0 +1,113 @@
+/* General Form Container */
+
+.history-form {
+  background-color: #f8fafc; /* light gray */
+  padding: 30px 25px;
+  max-width: 450px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Headings */
+.history-form h3 {
+  text-align: center;
+  color: #1e3a8a; /* dark blue */
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Input & Textarea */
+.history-form input,
+.history-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 2px solid #cbd5e1; /* light border */
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-form input:focus,
+.history-form textarea:focus {
+  border-color: #2563eb; /* blue on focus */
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.3);
+}
+
+/* Placeholder Styling */
+.history-form input::placeholder,
+.history-form textarea::placeholder {
+  color: #94a3b8; /* gray placeholder */
+  font-style: italic;
+}
+
+/* Error Messages */
+.error {
+  color: #dc2626; /* red */
+  font-size: 0.85rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Success & Error Messages */
+.success-msg {
+  background-color: #d1fae5; /* green light */
+  color: #065f46; /* dark green */
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.error-msg {
+  background-color: #fee2e2; /* red light */
+  color: #b91c1c; /* dark red */
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Submit Button */
+.history-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb; /* blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.history-form button:hover {
+  background-color: #1d4ed8; /* darker blue on hover */
+  transform: translateY(-2px);
+}
+
+.history-form button:disabled {
+  background-color: #93c5fd; /* light blue when disabled */
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .history-form {
+    padding: 25px 15px;
+    margin: 20px 10px;
+  }
+}
