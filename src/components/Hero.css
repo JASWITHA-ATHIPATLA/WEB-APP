@@ -1,0 +1,70 @@
+/* ===== HERO SECTION SIDE-BY-SIDE ===== */
+/* Add top margin to Hero to separate from navbar */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 6rem 2rem 4rem 2rem; /* increased top padding for space from navbar */
+  background-color: #f5f7fa;
+}
+
+/* Each hero item */
+.hero-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.hero-item img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+  transition: filter 0.3s ease;
+}
+
+.hero-item:hover img {
+  filter: brightness(75%);
+}
+
+/* Description next to image */
+.hero-desc {
+  padding: 1rem;
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c6e49;
+}
+
+.hero-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-item {
+    flex-direction: column;
+  }
+
+  .hero-item img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+}

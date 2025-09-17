@@ -1,0 +1,42 @@
+/* ===== FOOTER STYLES ===== */
+.footer {
+  background-color: #1b4332; /* dark green */
+  color: #fff;
+  padding: 4rem 2rem; /* prolonged section */
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-subtext {
+  font-size: 0.85rem;
+  color: #d4f1c5; /* lighter accent color */
+}
+
+/* Optional: add spacing on very small screens */
+@media (max-width: 640px) {
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.95rem;
+  }
+
+  .footer-subtext {
+    font-size: 0.8rem;
+  }
+}
