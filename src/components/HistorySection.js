@@ -7,11 +7,13 @@ export default function HistorySection() {
     <section className="history-section">
       <div className="history-container">
         <div className="history-content">
+          {/* ✅ Directly load from public/assets */}
           <img
-            src="/assets/backgroundImg.jpg"
+            src="/assets/hero1.png"
             alt="History of Sikkim Monasteries"
             className="history-image"
           />
+
           <div className="history-desc">
             <h2>History of Sikkim Monasteries</h2>
             <p>

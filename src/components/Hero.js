@@ -9,7 +9,7 @@ const monasteries = [
   },
   {
     id: 2,
-    src: "/assets/hero2.png",
+    src: "/assets/hero1.png",
     title: "Pemayangtse Monastery",
     desc: "Pemayangtse Monastery is famous for its beautiful architecture and annual festival rituals."
   },
