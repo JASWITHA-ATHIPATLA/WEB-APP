@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      var pathname = window.location.pathname;
+      var redirectPath = "/WEB-APP" + pathname.replace("/WEB-APP", "");
+      window.location.replace("/WEB-APP/index.html?redirect=" + redirectPath);
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
